@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bright-orange:  hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan:  hsl(179, 100%, 13%);
+    --color-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+html {
+    font-size: 65.2%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container {
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--light-gray);
+    margin-top: 1em;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+p {
+    color: var(--color-white);
+    line-height: 1.6;
+    margin: 2em 0;
+    font-size: 1.2rem;
+}
+.wrapper {
+    background-color: var(--light-gray);
+    padding: 4em 0;
+}
+.card {
+    padding: 2em;
+    
+}
+.card-1 {
+    background-color: var(--bright-orange);
+    
+}
+.card-1 .btn:hover {
+    border: 2px solid var(--light-gray);
+    color: var(--light-gray);
+    background-color: var(--bright-orange);
+}
+.card-2 {
+    background-color: var(--dark-cyan);
+}
+.card-2 .btn:hover {
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    background-color: var(--dark-cyan);
+}
+.card-3 {
+    background-color: var(--very-dark-cyan);
+}
+.card-3 .btn:hover {
+    border: 2px solid var(--light-gray);
+    color: var(--light-gray);
+    background-color: var(--very-dark-cyan);
+}
+.btn {
+    background-color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    border-radius: 200px;
+    padding: 0.5em 0.8em;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (min-width: 650px) {
+    .cards-wrapper {
+        display: flex;
+    }
+}
